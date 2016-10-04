@@ -3,8 +3,10 @@
 
 Following are the commands used to install Ionic Framework
 
-•	Update packages
-           sudo apt-get update
+•Update packages
+
+    sudo apt-get update
+    
 •	Install nodejs
    	sudo apt-get install nodejs
 •	Install npm
