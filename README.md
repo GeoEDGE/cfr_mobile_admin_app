@@ -35,5 +35,5 @@ Eg: Atom Editor for windows
     
 •Run the project in browser
 
-    Ionic serve - -lab
+    Ionic serve --lab
 
