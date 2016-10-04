@@ -1,7 +1,7 @@
 
 #  Installing Ionic Framework
 
-<p>Following are the commands used to install Ionic Framework <p>
+Following are the commands used to install Ionic Framework
 
 •	Update packages
            sudo apt-get update
