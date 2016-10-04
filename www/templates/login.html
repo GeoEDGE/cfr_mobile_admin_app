@@ -1,0 +1,59 @@
+<ion-view ng-controller="ListController">
+    <ion-view>
+        <ion-content ng-controller="LoginController" style="background-color:#cbced0;">
+            <a class="hiddenanchor" id="signup"></a>
+            <a class="hiddenanchor" id="signin"></a>
+            <div class="login_wrapper">
+                <div class="animate form login_form">
+                    <section class="login_content">
+                        <form>
+                            <center>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <img ng-src="">
+                                <br>
+                                <br>
+                                <div>
+                                    <input type="text" id='username' class="form-control" placeholder="Username" required="" style="padding-left:10px;width:60%;" ng-model="data.username" />
+                                </div>
+                                <br>
+                                <div>
+                                    <input type="password" id='pw' class="form-control" placeholder="Password" required="" style="padding-left:10px;width:60%;" ng-model="data.password" />
+                                </div>
+                                <br>
+                                <br>
+                                <div>                  
+                                    <a class="btn btn-block btn-info" id='log' ng-click="login()" style="width:60%;">Log in</a>
+                                </div>
+                                <div>
+                                    <br>
+                                    <!--a class="reset_pass" ng-href="#">Lost your password?</a-->
+                                </div>
+                            </center>
+                            <div class="clearfix"></div>
+                            <div class="clearfix"></div>
+                            <div>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <center>
+                                    <small id="link">©2016 All Rights Reserved. Developed by <a ng-href="http://geoedge.lk">GeoEDGE</a></small>
+                                </center>
+                            </div>
+                </div>
+                </form>
+                </section>
+            </div>
+            </div>
+            </div>
+        </ion-content>
+    </ion-view>

@@ -1,0 +1,56 @@
+<ion-view>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+        <ion-nav-buttons side="right">
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content ng-controller="DetailsQueueController" padding="true">
+        <div class="list card" id="listcard" ng-model="data.model">
+            <div class="item item-avatar">
+                <img src={{disimagereturn(obj.disaster_type.english)}}>
+                <h2>{{data.list.disaster_type.english}}</h2>
+                <p>{{data.list.reported_date}}</p>
+            </div>
+            <div class="item item-body">
+                <section class="section-white">
+                    <div class='list-group gallery'>
+                        <div class='col-sm-3 col-xs-4 col-md-3 col-lg-3' ng-repeat="img in imagearray">
+                            <a class="thumbnail fancybox" rel="ligthbox" href="http://demo.geoedge.lk/cfr/{{img.name}}">
+                                <img class="img-responsive" alt="" src="http://demo.geoedge.lk/cfr/{{img.name}}" />
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            </section>
+            <div class="list">
+                <a href="#" class="item item-icon-left">
+                    <i class="icon ion-home"></i> Address : {{data.list.address}}
+                </a>
+                <a href="#" class="item item-icon-left">
+                    <i class="icon ion-ios-telephone"></i> Contact No : {{data.list.contact_no}}
+                </a>
+                <a href="#" class="item item-icon-left">
+                    <i class="icon ion-person"></i> Name :{{data.list.name}}
+                </a>
+                <a href="#" class="item item-icon-left">
+                    <i class="icon ion-document-text"></i> Discrption
+                    <p>
+                        {{data.list.description}}
+                    </p>
+                </a>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-12">
+                    <a class="btn  btn-danger" ng-href="#list" style="width:90px;"><i class="glyphicon glyphicon-arrow-left">Back</i></a>
+                    <a class="btn btn-success" ng-click="launchNavigator()" style="width:90px;"><i class="glyphicon glyphicon-map-marker">Route</i></a>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn-primary" ng-click="showDiscardAlert()" style="padding-top:5px;"><i class="glyphicon glyphicon-remove">Discard</i>
+                    </button>
+                    <button type="submit" class="btn btn-warning" ng-click="showverifiedAlert()" style="padding-top:5px;"><i class="glyphicon glyphicon-ok">Verified</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </ion-content>
+</ion-view>

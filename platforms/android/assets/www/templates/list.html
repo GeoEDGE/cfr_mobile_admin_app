@@ -1,0 +1,31 @@
+<ion-view ng-controller="ListController">
+   <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+
+      <ion-nav-buttons side="right">
+<label style="text-align:left;margin-right:60px;padding-top:3px;font-size:10px;"  name="count">View Incidents: {{data.list.length}}<br>Total Incidents: {{total}}
+</label>
+         <button class="btn btn-lg btn-info" style="margin-right:5px;" ng-click=filterpopup()><i class="glyphicon glyphicon-filter"></i> Filter</button>
+         <button class="btn btn-lg btn-success" style="margin-top:0px;" ng-click=logout()><i class="glyphicon glyphicon-log-out"></i> Logout</button>
+
+
+
+      </ion-nav-buttons>
+   </ion-nav-bar>
+
+   <ion-content padding="true">
+
+      <ul class="list-group" id="mylist" ng-model="data.model" >
+         <li class="list-group-item" ng-repeat="obj in data.list | orderBy:['-id']" on-last-repeat="countLi()" value="{{obj.id}}" name=list>
+            <a style="text-decoration:none;" ng-href="#edit/{{obj.id}}">
+               <img ng-src="{{disimagereturn(obj.disaster_type.english)}}" style="float:right;"></img>
+               <h4>
+                  <B>{{obj.disaster_type.english}}</B>
+               </h4>
+               <h5>{{obj.reported_date}}</h5>
+               <h6>{{obj.address}}</h6>
+            </a>
+         </li>
+      </ul>
+      <div>
+   </ion-content>
+</ion-view>
