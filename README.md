@@ -31,9 +31,9 @@ Eg: Atom Editor for windows
      
 •Run the Project in android device
 
-    Ionic run android
+    ionic run android
     
 •Run the project in browser
 
-    Ionic serve --lab
+    ionic serve --lab
 
