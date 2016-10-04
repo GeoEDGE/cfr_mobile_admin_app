@@ -7,19 +7,33 @@ Following are the commands used to install Ionic Framework
 
     sudo apt-get update
     
-•	Install nodejs
+•Install nodejs
+
    	sudo apt-get install nodejs
-•	Install npm
-sudo apt-get install npm
-•	Install Ionic Framework
+    
+•Install npm
+
+    sudo apt-get install npm
+
+•Install Ionic Framework
+
 After installing npm you will be able to install Ionic Framwork. Execute the following commands in your terminal:
-sudo npm install -g cordova ionic
-sudo npm install -g ionic
-•	Install an editor to view or edit the code
+
+    sudo npm install -g cordova ionic
+    
+    sudo npm install -g ionic
+    
+• Install an editor to view or edit the code
+
 Eg: Atom Editor for windows
- http://flight-manual.atom.io/getting-started/sections/installing-atom/
-Run the Project in android device
-Ionic run android
-•	Run the project in browser
-Ionic serve - -lab
+
+     http://flight-manual.atom.io/getting-started/sections/installing-atom/
+     
+•Run the Project in android device
+
+    Ionic run android
+    
+•Run the project in browser
+
+    Ionic serve - -lab
 
