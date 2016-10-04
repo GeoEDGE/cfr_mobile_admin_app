@@ -1,6 +1,6 @@
-# cfr_mobile_admin_app
 
-Installing Ionic Framework
+#  Installing Ionic Framework
+
 Following are the commands used to install Ionic Framework 
 •	Update packages
            sudo apt-get update
