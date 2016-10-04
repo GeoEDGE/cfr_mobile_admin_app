@@ -1,7 +1,8 @@
 
 #  Installing Ionic Framework
 
-Following are the commands used to install Ionic Framework 
+<p>Following are the commands used to install Ionic Framework <p>
+
 •	Update packages
            sudo apt-get update
 •	Install nodejs
@@ -9,7 +10,7 @@ Following are the commands used to install Ionic Framework
 •	Install npm
 sudo apt-get install npm
 •	Install Ionic Framework
-After installing npm you will be able to install Ionic Framwork .Write the following commands in your terminal:
+After installing npm you will be able to install Ionic Framwork. Execute the following commands in your terminal:
 sudo npm install -g cordova ionic
 sudo npm install -g ionic
 •	Install an editor to view or edit the code
